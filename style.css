@@ -164,8 +164,11 @@ nav a:hover,
 }
 
 #services {
-  background: linear-gradient(to right, #e3f2fd, #f9f9ff);
+  background-image: url("https://i.giphy.com/sxwk9hGlsULcYm6hDX.webp");
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  color: #fff;
 }
 
 .service-icons {
