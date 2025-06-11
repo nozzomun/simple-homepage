@@ -55,6 +55,11 @@ section {
   background-image: url("https://user0514.cdnw.net/shared/img/thumb/textHFKE0400_TP_V.jpg");
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-section::before {
@@ -78,9 +83,48 @@ section {
   display: block;
 }
 
-section:nth-child(even) {
-  background-color: #f0f8ff;
+/* buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005bbb;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
 }
+.btn:hover {
+  background-color: #004999;
+  transform: translateY(-3px);
+}
+
+nav a,
+.nav-toggle {
+  transition: color 0.3s, transform 0.3s;
+}
+nav a:hover,
+.nav-toggle:hover {
+  transform: translateY(-3px);
+}
+
+#services {
+  background: linear-gradient(to right, #e3f2fd, #f9f9ff);
+  text-align: center;
+}
+
+.service-icons {
+  margin: 20px 0;
+  font-size: 2.5em;
+}
+.service-icons i {
+  margin: 0 10px;
+}
+
+#contact {
+  background: linear-gradient(to right, #f9f9ff, #e3f2fd);
+  text-align: center;
+}
+
 
 footer {
   background-color: #005bbb;
@@ -116,3 +160,4 @@ footer {
     position: static;
   }
 }
+
