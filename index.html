@@ -10,7 +10,8 @@
   <header>
     <h1>未来テック株式会社</h1>
     <nav>
-      <ul>
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー">MENU</button>
+      <ul id="navList">
         <li><a href="#about">会社概要</a></li>
         <li><a href="#services">サービス紹介</a></li>
         <li><a href="#contact">お問い合わせ</a></li>
@@ -18,26 +19,28 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>会社概要</h2>
-    <p>未来テック株式会社は、最先端の技術で未来を創造する企業です。</p>
-    <img src="https://user0514.cdnw.net/shared/img/thumb/textHFKE0400_TP_V.jpg" alt="オフィスの外観">
-  </section>
+  <a href="about.html" class="section-link"><section id="about" class="about-section">
+      <h2>会社概要</h2>
+      <p>未来テック株式会社は、最先端のテクノロジーを活用し、
+クラウドソリューション、AI開発、業務効率化支援など、
+幅広いサービスでお客様の課題解決を支援します。</p>
+    </section></a>
 
-  <section id="services">
+  <a href="services.html" class="section-link"><section id="services">
     <h2>サービス紹介</h2>
     <p>クラウドソリューションやAI開発など、幅広いサービスを提供しています。</p>
     <img src="https://via.placeholder.com/600x400?text=office" alt="オフィスの外観">
-  </section>
+  </section></a>
 
-  <section id="contact">
+  <a href="contact.html" class="section-link"><section id="contact">
     <h2>お問い合わせ</h2>
     <p>ご質問やご相談は、下記メールアドレスまでお気軽にお問い合わせください。</p>
     <p><a href="mailto:info@mirai-tech.co.jp">info@mirai-tech.co.jp</a></p>
-  </section>
+  </section></a>
 
   <footer>
     <p>© 2025 未来テック株式会社</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
