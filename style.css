@@ -16,7 +16,19 @@ header h1 {
   font-size: 1.5em;
 }
 
-nav ul {
+nav {
+  position: relative;
+}
+
+.nav-toggle {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#navList {
   list-style: none;
   padding: 0;
   margin: 10px 0 0;
@@ -36,6 +48,36 @@ section {
   padding: 40px 20px;
 }
 
+.about-section {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  background-image: url("https://user0514.cdnw.net/shared/img/thumb/textHFKE0400_TP_V.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 section:nth-child(even) {
   background-color: #f0f8ff;
 }
@@ -48,10 +90,29 @@ footer {
 }
 
 @media (max-width: 600px) {
-  nav ul {
+  #navList {
+    display: none;
     flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    background-color: #005bbb;
+    width: 150px;
+  }
+  #navList.open {
+    display: block;
   }
   nav li {
-    margin: 5px 0;
+    margin: 5px 10px;
+  }
+}
+
+@media (min-width: 601px) {
+  .nav-toggle {
+    display: none;
+  }
+  #navList {
+    display: flex;
+    position: static;
   }
 }
